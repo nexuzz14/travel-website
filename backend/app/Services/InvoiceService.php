@@ -18,6 +18,9 @@ class InvoiceService
             'schedule' => $order->travelSchedule,
         ];
 
+        $pdf = Pdf::loadView('invoices.ticket', $data)
+              ->setPaper('a4', 'portrait');
+
         $pdf = Pdf::loadView('invoices.ticket', $data);
 
         $filename = 'invoices/invoice-' . $order->id . '-' . time() . '.pdf';

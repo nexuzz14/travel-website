@@ -18,7 +18,6 @@
       </div>
 
       <div class="bg-white rounded-lg shadow-xl p-8">
-        <!-- Toggle Tabs -->
         <div class="flex mb-6 bg-gray-100 rounded-lg p-1">
           <button
             @click="activeTab = 'login'"
@@ -36,7 +35,6 @@
           </button>
         </div>
 
-        <!-- Error/Success Message -->
         <div
           v-if="error"
           class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4 text-sm"
@@ -50,7 +48,6 @@
           {{ success }}
         </div>
 
-        <!-- Login Form -->
         <form v-if="activeTab === 'login'" @submit.prevent="handleLogin">
           <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2">Email</label>
@@ -83,7 +80,6 @@
           </button>
         </form>
 
-        <!-- Register Form -->
         <form v-else @submit.prevent="handleRegister">
           <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2">Nama Lengkap</label>
@@ -92,7 +88,7 @@
               type="text"
               required
               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="John Doe"
+              placeholder="Muhammad Nabil Cahya Firdaus"
             />
           </div>
 
@@ -151,7 +147,6 @@
           </button>
         </form>
 
-        <!-- Demo Credentials -->
         <div class="mt-6 pt-6 border-t border-gray-200">
           <p class="text-xs text-gray-500 text-center mb-2">Demo Credentials untuk Testing:</p>
           <div class="text-xs text-gray-600 space-y-1">
@@ -167,9 +162,8 @@
         </div>
       </div>
 
-      <!-- Footer -->
       <div class="text-center mt-6 text-sm text-gray-600">
-        <p>© 2024 Travel Booking System</p>
+        <p>© 2025 Muhammad Nabil Cahya Firdaus</p>
       </div>
     </div>
   </div>

@@ -22,7 +22,7 @@ class DatabaseSeeder extends Seeder
 
         // Create Passenger Users
         User::create([
-            'name' => 'John Doe',
+            'name' => 'Nabil CF',
             'email' => 'passenger@travel.com',
             'password' => Hash::make('password'),
             'role' => 'passenger',
@@ -30,8 +30,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         User::create([
-            'name' => 'Jane Smith',
-            'email' => 'jane@example.com',
+            'name' => 'Jono',
+            'email' => 'jono@example.com',
             'password' => Hash::make('password'),
             'role' => 'passenger',
             'phone' => '081234567892'
